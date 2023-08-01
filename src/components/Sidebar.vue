@@ -7,69 +7,69 @@ import Home from '../views/HomeView.vue'
     <div class="top-container">
       <router-link :to="Home">
         <svg
-          width="32"
+          width="26"
+          height="26"
+          viewBox="0 0 26 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 8.33333L13 1L25 8.33333"
+            stroke="#777777"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M22.3333 13V21.5333C22.3333 21.9752 21.9752 22.3333 21.5333 22.3333H4.46666C4.02483 22.3333 3.66666 21.9752 3.66666 21.5333V13"
+            stroke="#777777"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </router-link>
+      <router-link :to="Home">
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.1538 1.15398H3.53845C2.1365 1.15398 1 2.29048 1 3.69243V21.4616C1 22.8636 2.1365 24 3.53845 24H21.3076C22.7096 24 23.846 22.8636 23.846 21.4616V13.8462"
+            stroke="#777777"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.24997 11.9424L19.4038 1.7886C20.4552 0.737134 22.16 0.737134 23.2114 1.7886C24.2629 2.84006 24.2629 4.54481 23.2114 5.59627L13.0576 15.7501L7.34613 17.6539L9.24997 11.9424Z"
+            stroke="#777777"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </router-link>
+      <router-link :to="Home">
+        <svg
+          width="26"
           height="29"
-          viewBox="0 0 32 29"
+          viewBox="0 0 26 29"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M1 10.1667L16 1L31 10.1667"
+            d="M13 13C16.3137 13 19 10.3137 19 7C19 3.68629 16.3137 1 13 1C9.68629 1 7 3.68629 7 7C7 10.3137 9.68629 13 13 13Z"
             stroke="#777777"
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
           <path
-            d="M27.6666 16V26.6667C27.6666 27.219 27.219 27.6667 26.6666 27.6667H5.33331C4.78103 27.6667 4.33331 27.219 4.33331 26.6667V16"
-            stroke="#777777"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </router-link>
-      <router-link :to="Home">
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M14.2441 1.20085H4.31102C2.48239 1.20085 1 2.68325 1 4.51187V27.689C1 29.5177 2.48239 31 4.31102 31H27.4882C29.3168 31 30.7992 29.5177 30.7992 27.689V17.756"
-            stroke="#777777"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M11.7608 15.2727L25.0049 2.02861C26.3763 0.657131 28.6 0.657131 29.9714 2.02861C31.3429 3.40008 31.3429 5.62366 29.9714 6.99514L16.7274 20.2392L9.27756 22.7225L11.7608 15.2727Z"
-            stroke="#777777"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </router-link>
-      <router-link :to="Home">
-        <svg
-          width="32"
-          height="36"
-          viewBox="0 0 32 36"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M16 16C20.1421 16 23.5 12.6421 23.5 8.5C23.5 4.35786 20.1421 1 16 1C11.8579 1 8.5 4.35786 8.5 8.5C8.5 12.6421 11.8579 16 16 16Z"
-            stroke="#777777"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M1 34.75V27.25C1 25.1789 2.67893 23.5 4.75 23.5H27.25C29.3211 23.5 31 25.1789 31 27.25V34.75"
+            d="M1 28V22C1 20.3431 2.34314 19 4 19H22C23.6569 19 25 20.3431 25 22V28"
             stroke="#777777"
             stroke-width="2"
             stroke-linecap="round"
@@ -81,14 +81,14 @@ import Home from '../views/HomeView.vue'
     <div class="bot-container">
       <router-link :to="Home">
         <svg
-          width="32"
-          height="38"
-          viewBox="0 0 32 38"
+          width="28"
+          height="28"
+          viewBox="0 0 28 30"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M21.5674 33.2922C20.0826 35.5193 18.2268 36.6328 15.9997 36.6328C13.7727 36.6328 11.9168 35.5193 10.4321 33.2922M27.3232 29.9517H4.67622C2.6459 29.9517 0.999999 28.3058 0.999999 26.2754C0.999999 25.6091 1.18108 24.9554 1.52389 24.384C3.70979 20.7409 4.86446 16.5721 4.86446 12.3235V9.9082C4.86446 4.98833 8.8528 0.999992 13.7727 0.999992H18.2268C23.1466 0.999992 27.135 4.98833 27.135 9.9082V12.3235C27.135 16.5721 28.2897 20.7409 30.4756 24.384C31.5201 26.125 30.9556 28.3832 29.2146 29.4278C28.6433 29.7706 27.9895 29.9517 27.3232 29.9517Z"
+            d="M16.7683 25.7574C15.63 27.4648 14.2072 28.3185 12.4998 28.3185C10.7924 28.3185 9.36954 27.4648 8.23127 25.7574M21.1811 23.1963H3.81844C2.26186 23.1963 0.999999 21.9345 0.999999 20.3779C0.999999 19.8671 1.13883 19.3658 1.40165 18.9278C3.0775 16.1347 3.96276 12.9387 3.96276 9.68139V7.82967C3.96276 4.05777 7.02048 1.00005 10.7924 1.00005H14.2072C17.9791 1.00005 21.0368 4.05777 21.0368 7.82967V9.68139C21.0368 12.9387 21.9221 16.1347 23.5979 18.9278C24.3988 20.2626 23.966 21.9938 22.6312 22.7947C22.1932 23.0575 21.692 23.1963 21.1811 23.1963Z"
             stroke="#777777"
             stroke-width="2"
             stroke-linecap="round"
@@ -98,14 +98,14 @@ import Home from '../views/HomeView.vue'
       </router-link>
       <router-link :to="Home">
         <svg
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
+          width="26"
+          height="26"
+          viewBox="0 0 26 26"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M14.125 31H4.75C3.75544 31 2.80161 30.6049 2.09835 29.9016C1.39509 29.1984 1 28.2446 1 27.25V4.75C1 3.75544 1.39509 2.80161 2.09835 2.09835C2.80161 1.39509 3.75544 1 4.75 1H14.125M12.25 16L19.75 8.5M12.25 16L19.75 23.5M12.25 16H31"
+            d="M11.5 25H4C3.20435 25 2.44129 24.6839 1.87868 24.1213C1.31607 23.5587 1 22.7956 1 22V4C1 3.20435 1.31607 2.44129 1.87868 1.87868C2.44129 1.31607 3.20435 1 4 1H11.5M10 13L16 7M10 13L16 19M10 13H25"
             stroke="#777777"
             stroke-width="2"
             stroke-linecap="round"
@@ -125,23 +125,34 @@ import Home from '../views/HomeView.vue'
   top: 0;
   left: 0;
   padding: 4rem 0 2.5rem;
-  width: 4rem;
+  width: 3vw;
   height: 100vh;
   line-height: 50px;
   font-weight: 500;
-  background-color: #e7e7e7;
   z-index: 10;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid hsl(0, 0%, 86%);
+  background-color: #e7e7e7;
 }
 .top-container,
 .bot-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
 
   a {
-    margin: 0.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    border-radius: 15%;
+  }
+  a:hover {
+    background-color: #c7c7c7;
   }
 }
 </style>

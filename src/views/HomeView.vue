@@ -4,4 +4,7 @@
   <div class="main-container"></div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+.main-container {
+}
+</style>

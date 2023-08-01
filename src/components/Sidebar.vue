@@ -1,11 +1,9 @@
-<script setup lang="ts">
-import Home from '../views/HomeView.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="main-container">
     <div class="top-container">
-      <router-link :to="Home">
+      <router-link to="/">
         <svg
           width="26"
           height="26"
@@ -29,7 +27,7 @@ import Home from '../views/HomeView.vue'
           />
         </svg>
       </router-link>
-      <router-link :to="Home">
+      <router-link to="">
         <svg
           width="25"
           height="25"
@@ -53,7 +51,7 @@ import Home from '../views/HomeView.vue'
           />
         </svg>
       </router-link>
-      <router-link :to="Home">
+      <router-link to="">
         <svg
           width="26"
           height="29"
@@ -79,7 +77,7 @@ import Home from '../views/HomeView.vue'
       </router-link>
     </div>
     <div class="bot-container">
-      <router-link :to="Home">
+      <router-link to="">
         <svg
           width="28"
           height="28"
@@ -96,7 +94,7 @@ import Home from '../views/HomeView.vue'
           />
         </svg>
       </router-link>
-      <router-link :to="Home">
+      <router-link to="/Login">
         <svg
           width="26"
           height="26"
@@ -118,22 +116,19 @@ import Home from '../views/HomeView.vue'
 </template>
 
 <style scoped lang="scss">
+@import '../assets/_constants.scss';
 .main-container {
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 4rem 0 2.5rem;
-  width: 3vw;
+  padding: 2rem 0.5rem;
   height: 100vh;
-  line-height: 50px;
-  font-weight: 500;
   z-index: 10;
-  align-items: center;
   justify-content: space-between;
   border: 1px solid hsl(0, 0%, 86%);
-  background-color: #e7e7e7;
+  background-color: $d1;
 }
 .top-container,
 .bot-container {
@@ -150,9 +145,12 @@ import Home from '../views/HomeView.vue'
     justify-content: center;
     padding: 0.6rem;
     border-radius: 15%;
-  }
-  a:hover {
-    background-color: #c7c7c7;
+    &:hover {
+      background-color: $d2;
+    }
+    &:active {
+      background-color: $d3;
+    }
   }
 }
 </style>

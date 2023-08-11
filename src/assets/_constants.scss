@@ -1,14 +1,15 @@
-$d1: #e7e7e7;
-$d2: #c7c7c7;
-$d3: #a7a7a7;
+$d1: #f7f7f7;
+$d2: #d7d7d7;
+$d3: #b7b7b7;
+$green: hsla(160, 100%, 37%, 1);
 
 .clickEventGrey {
   cursor: pointer;
   background-color: $d1;
   &:hover {
-	background-color: $d2;
+    background-color: $d2;
   }
   &:active {
-	background-color: $d3;
+    background-color: $d3;
   }
 }

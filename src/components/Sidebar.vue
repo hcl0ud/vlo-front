@@ -1,8 +1,17 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import router from '@/router'
 import AlramModal from '@/components/AlramBox.vue'
+import { useRoute } from 'vue-router'
+const route: any = useRoute()
 
 const showAlram = ref(false)
+watch(
+  () => router.currentRoute.value.fullPath,
+  () => {
+    showAlram.value = false
+  }
+)
 </script>
 
 <template>

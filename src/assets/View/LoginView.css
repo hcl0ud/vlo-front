@@ -1,12 +1,12 @@
 .clickEventGrey {
   cursor: pointer;
-  background-color: #e7e7e7;
+  background-color: #f7f7f7;
 }
 .clickEventGrey:hover {
-  background-color: #c7c7c7;
+  background-color: #d7d7d7;
 }
 .clickEventGrey:active {
-  background-color: #a7a7a7;
+  background-color: #b7b7b7;
 }
 
 .main-container {
@@ -19,6 +19,7 @@
 }
 .main-container .title {
   font-size: 3rem;
+  color: hsl(160, 100%, 37%);
 }
 .main-container .input-box {
   position: relative;
@@ -72,6 +73,7 @@
   transition: all 0.2s;
 }
 .main-container .register {
+  color: hsl(160, 100%, 37%);
   font-size: 20px;
   cursor: pointer;
 }

@@ -1,12 +1,12 @@
 .clickEventGrey {
   cursor: pointer;
-  background-color: #e7e7e7;
+  background-color: #f7f7f7;
 }
 .clickEventGrey:hover {
-  background-color: #c7c7c7;
+  background-color: #d7d7d7;
 }
 .clickEventGrey:active {
-  background-color: #a7a7a7;
+  background-color: #b7b7b7;
 }
 
 .main-container {
@@ -19,8 +19,8 @@
   height: 100vh;
   z-index: 10;
   justify-content: space-between;
-  border: 1px solid hsl(0, 0%, 86%);
-  background-color: #e7e7e7;
+  border: 0.5px solid #d7d7d7;
+  background-color: #f7f7f7;
 }
 
 .top-container,
@@ -43,7 +43,7 @@
 
 .alram-container {
   transition: all 0.4s ease;
-  background-color: #e7e7e7;
+  background-color: #f7f7f7;
 }
 
 /*# sourceMappingURL=Sidebar.css.map */

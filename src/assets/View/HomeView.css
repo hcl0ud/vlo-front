@@ -1,3 +1,113 @@
+.clickEventGrey {
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+.clickEventGrey:hover {
+  background-color: #d7d7d7;
+}
+.clickEventGrey:active {
+  background-color: #b7b7b7;
+}
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 100vh;
+}
+.main-container .top-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem auto;
+}
+.main-container .top-container .left-container,
+.main-container .top-container .right-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.main-container .top-container .left-container .sort,
+.main-container .top-container .left-container .view-change,
+.main-container .top-container .right-container .sort,
+.main-container .top-container .right-container .view-change {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.main-container .top-container .left-container .sort,
+.main-container .top-container .right-container .sort {
+  padding: 0 5px 5px 3px;
+  gap: 0.5rem;
+}
+.main-container .top-container .left-container .select-sort,
+.main-container .top-container .right-container .select-sort {
+  color: hsl(160, 100%, 37%);
+  border-bottom: 2px solid hsl(160, 100%, 37%);
+}
+.main-container .top-container .left-container .select-sort svg path,
+.main-container .top-container .right-container .select-sort svg path {
+  fill: hsl(160, 100%, 37%);
+}
+.main-container .contents-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+.main-container .contents-container .contents-box {
+  display: flex;
+  width: 320px;
+  height: 360px;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: #fdfdfd;
+  box-shadow: 5px 5px #f7f7f7;
+}
+.main-container .contents-container .contents-box-top, .main-container .contents-container .contents-box-middle, .main-container .contents-container .contents-box-bottom {
+  width: 100%;
+}
+.main-container .contents-container .contents-box-top {
+  min-height: 45%;
+  max-height: 45%;
+  border-bottom: 1px solid #d7d7d7;
+}
+.main-container .contents-container .contents-box-middle {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  padding: 1rem;
+}
+.main-container .contents-container .contents-box-middle .title {
+  font-size: 20px;
+}
+.main-container .contents-container .contents-box-middle .preview-text {
+  height: auto;
+}
+.main-container .contents-container .contents-box-middle .board-info {
+  font-size: 12px;
+}
+.main-container .contents-container .contents-box-bottom {
+  padding: 0.625rem 1rem;
+  border-top: 1px solid #d7d7d7;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.btn-gotop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  bottom: 3rem;
+  right: 5rem;
+}
 
 /*# sourceMappingURL=HomeView.css.map */

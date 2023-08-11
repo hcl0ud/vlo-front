@@ -1,0 +1,94 @@
+.clickEventGrey {
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+.clickEventGrey:hover {
+  background-color: #c7c7c7;
+}
+.clickEventGrey:active {
+  background-color: #a7a7a7;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+}
+.main-container .title {
+  font-size: 3rem;
+}
+.main-container .input-box {
+  position: relative;
+  box-sizing: border-box;
+}
+.main-container input {
+  font-size: 16px;
+  color: #222222;
+  width: 15rem;
+  height: 3rem;
+  border: none;
+  border-bottom: solid #aaaaaa 1px;
+  position: relative;
+  background: none;
+  z-index: 5;
+}
+.main-container input::placeholder {
+  color: #aaaaaa;
+}
+.main-container input:focus {
+  outline: none;
+}
+.main-container input:focus ~ label,
+.main-container input:valid ~ label {
+  font-size: 16px;
+  bottom: 40px;
+  color: #666;
+  font-weight: bold;
+}
+.main-container input:focus ~ span,
+.main-container input:valid ~ span {
+  width: 100%;
+}
+.main-container span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #666;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.main-container label {
+  position: absolute;
+  color: #aaa;
+  left: 10px;
+  font-size: 20px;
+  bottom: 8px;
+  transition: all 0.2s;
+}
+.main-container .register {
+  font-size: 20px;
+  cursor: pointer;
+}
+.main-container .register:hover {
+  opacity: 30%;
+}
+.main-container .register:active {
+  opacity: 100%;
+}
+.main-container .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=LoginView.css.map */

@@ -1,9 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import AlramModal from '@/components/AlramBox.vue'
+
+const showAlram = ref(false)
+</script>
 
 <template>
   <div class="main-container">
     <div class="top-container">
-      <router-link to="/">
+      <router-link class="clickEventGrey" to="/">
         <svg
           width="26"
           height="26"
@@ -27,7 +32,7 @@
           />
         </svg>
       </router-link>
-      <router-link to="">
+      <router-link class="clickEventGrey" to="">
         <svg
           width="25"
           height="25"
@@ -51,7 +56,7 @@
           />
         </svg>
       </router-link>
-      <router-link to="">
+      <router-link class="clickEventGrey" to="">
         <svg
           width="26"
           height="29"
@@ -77,7 +82,7 @@
       </router-link>
     </div>
     <div class="bot-container">
-      <router-link to="">
+      <a class="clickEventGrey" @click="showAlram = !showAlram">
         <svg
           width="28"
           height="28"
@@ -93,8 +98,9 @@
             stroke-linejoin="round"
           />
         </svg>
-      </router-link>
-      <router-link to="/Login">
+        <alram-modal class="alram-container" v-if="showAlram" key="1" />
+      </a>
+      <router-link class="clickEventGrey" to="/Login">
         <svg
           width="26"
           height="26"
@@ -116,41 +122,5 @@
 </template>
 
 <style scoped lang="scss">
-@import '../assets/_constants.scss';
-.main-container {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 2rem 0.5rem;
-  height: 100vh;
-  z-index: 10;
-  justify-content: space-between;
-  border: 1px solid hsl(0, 0%, 86%);
-  background-color: $d1;
-}
-.top-container,
-.bot-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  gap: 1rem;
-
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.6rem;
-    border-radius: 15%;
-    &:hover {
-      background-color: $d2;
-    }
-    &:active {
-      background-color: $d3;
-    }
-  }
-}
+@import '@/assets/Components/Sidebar.scss';
 </style>

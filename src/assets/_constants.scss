@@ -1,3 +1,14 @@
 $d1: #e7e7e7;
 $d2: #c7c7c7;
 $d3: #a7a7a7;
+
+.clickEventGrey {
+  cursor: pointer;
+  background-color: $d1;
+  &:hover {
+	background-color: $d2;
+  }
+  &:active {
+	background-color: $d3;
+  }
+}

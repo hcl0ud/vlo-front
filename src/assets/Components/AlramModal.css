@@ -1,0 +1,25 @@
+.clickEventGrey {
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+.clickEventGrey:hover {
+  background-color: #c7c7c7;
+}
+.clickEventGrey:active {
+  background-color: #a7a7a7;
+}
+
+.main-container {
+  display: block;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  margin-left: 4rem;
+  padding: 2rem 0.5rem;
+  width: 20%;
+  height: 100vh;
+  z-index: 5;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+
+/*# sourceMappingURL=AlramModal.css.map */

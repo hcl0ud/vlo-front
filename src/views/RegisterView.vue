@@ -2,7 +2,12 @@
 
 <template>
   <div class="main-container">
-    <div class="title">Login</div>
+    <div class="title">Register</div>
+    <div class="input-box">
+      <input type="text" required />
+      <label>Nickname</label>
+      <span />
+    </div>
     <div class="input-box">
       <input type="text" required />
       <label>Email</label>
@@ -13,8 +18,13 @@
       <label>Password</label>
       <span />
     </div>
-    <router-link class="register" to="/Register">register</router-link>
-    <router-link class="clickEventGrey submit" to="/">
+    <div class="input-box">
+      <input type="password" required />
+      <label>Password Check</label>
+      <span />
+    </div>
+
+    <router-link class="submit clickEventGrey" to="/Login">
       <svg
         width="17"
         height="32"

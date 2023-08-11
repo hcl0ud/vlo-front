@@ -5,6 +5,5 @@
 </template>
 
 <style scoped lang="scss">
-.main-container {
-}
+@import '@/assets/View/HomeView.scss';
 </style>

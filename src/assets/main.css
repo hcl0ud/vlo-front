@@ -43,8 +43,9 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
-  font-family: "Gugi", cursive;
+  font-weight: 500;
+  font-family: "NanumSquareRound", sans-serif;
+  font-size: 1rem;
 }
 
 *::before,
@@ -58,8 +59,7 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 14px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "NanumSquareRound";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

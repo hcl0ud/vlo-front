@@ -1,0 +1,136 @@
+.clickEventGrey {
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+.clickEventGrey:hover {
+  background-color: #d7d7d7;
+}
+.clickEventGrey:active {
+  background-color: #b7b7b7;
+}
+
+.writeview-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 3rem;
+}
+.writeview-container .edit-container {
+  width: 50%;
+  height: 100%;
+}
+.writeview-container .edit-container .title {
+  width: 100%;
+  height: 6rem;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 2rem 3rem;
+}
+.writeview-container .edit-container .title:focus {
+  outline: none;
+}
+.writeview-container .edit-container .editor {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 6rem);
+  outline: none;
+  border: none;
+  line-height: 1.6;
+  padding: 1rem 3rem;
+  overflow-y: scroll;
+  resize: none;
+}
+.writeview-container .edit-container .editor:focus {
+  outline: none;
+}
+.writeview-container .preview-container {
+  width: 50%;
+  height: 100%;
+  background-color: #f7f7f7;
+  overflow-y: scroll;
+}
+.writeview-container .preview-container .preview-title {
+  width: 100%;
+  height: 6rem;
+  padding: 2rem 3rem;
+}
+.writeview-container .preview-container .preview-title p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.writeview-container .preview-container .preview-text {
+  width: 100%;
+  height: calc(100% - 6rem);
+  white-space: pre-line;
+  padding: 1rem 3rem;
+}
+.writeview-container .preview-container .preview-text h1,
+.writeview-container .preview-container .preview-text h2,
+.writeview-container .preview-container .preview-text h3,
+.writeview-container .preview-container .preview-text h4 {
+  display: block;
+  font-weight: bold;
+}
+.writeview-container .preview-container .preview-text h1 {
+  font-size: 2em;
+}
+.writeview-container .preview-container .preview-text h2 {
+  font-size: 1.8em;
+}
+.writeview-container .preview-container .preview-text h3 {
+  font-size: 1.6em;
+}
+.writeview-container .preview-container .preview-text h4 {
+  font-size: 1.4em;
+}
+.writeview-container .preview-container .preview-text code,
+.writeview-container .preview-container .preview-text blockquote {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+}
+.writeview-container .preview-container .preview-text code {
+  padding: 1rem;
+  background-color: #e7e7e7;
+}
+.writeview-container .preview-container .preview-text blockquote {
+  margin: 0.5rem 0;
+  background-color: #f7f7f7;
+  border-left: 0.5rem inset lightsteelblue;
+}
+.writeview-container .preview-container .preview-text ul,
+.writeview-container .preview-container .preview-text ol {
+  padding-left: 1rem;
+  height: auto;
+  margin-block: 0;
+  margin-inline: 0;
+  white-space: normal;
+}
+.writeview-container .btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: fixed;
+  height: 2.5rem;
+  background-color: #12b886;
+  bottom: 2rem;
+  right: 50%;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-inline: 1.5rem;
+}
+.writeview-container .btn-submit:hover {
+  background-color: #20c997;
+}
+.writeview-container .btn-submit:active {
+  background-color: #12b886;
+}
+
+/*# sourceMappingURL=WriteView.css.map */

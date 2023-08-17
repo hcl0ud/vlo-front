@@ -19,7 +19,7 @@
 }
 .main-container .title {
   font-size: 3rem;
-  color: hsl(160, 100%, 37%);
+  color: #12b886;
 }
 .main-container .input-box {
   position: relative;
@@ -73,7 +73,7 @@
   transition: all 0.2s;
 }
 .main-container .register {
-  color: hsl(160, 100%, 37%);
+  color: #12b886;
   font-size: 20px;
   cursor: pointer;
 }

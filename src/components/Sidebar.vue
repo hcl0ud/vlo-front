@@ -41,7 +41,7 @@ watch(
           />
         </svg>
       </router-link>
-      <router-link class="clickEventGrey" to="">
+      <router-link class="clickEventGrey" to="/Write">
         <svg
           width="25"
           height="25"
@@ -65,7 +65,7 @@ watch(
           />
         </svg>
       </router-link>
-      <router-link class="clickEventGrey" to="">
+      <router-link class="clickEventGrey" to="/Mypage">
         <svg
           width="26"
           height="29"

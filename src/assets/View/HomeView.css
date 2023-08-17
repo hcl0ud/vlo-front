@@ -42,12 +42,12 @@
 }
 .main-container .top-container .left-container .select-sort,
 .main-container .top-container .right-container .select-sort {
-  color: hsl(160, 100%, 37%);
-  border-bottom: 2px solid hsl(160, 100%, 37%);
+  color: #12b886;
+  border-bottom: 2px solid #12b886;
 }
 .main-container .top-container .left-container .select-sort svg path,
 .main-container .top-container .right-container .select-sort svg path {
-  fill: hsl(160, 100%, 37%);
+  fill: #12b886;
 }
 .main-container .contents-container {
   display: flex;

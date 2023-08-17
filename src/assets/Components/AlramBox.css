@@ -15,11 +15,11 @@
   position: fixed;
   top: 0;
   margin-left: 4rem;
-  padding: 2rem 0.5rem;
-  width: 20%;
+  padding: 1rem 2rem;
+  width: 20rem;
   height: 100vh;
   z-index: 5;
   border: 1px solid hsl(0, 0%, 86%);
 }
 
-/*# sourceMappingURL=AlramModal.css.map */
+/*# sourceMappingURL=AlramBox.css.map */

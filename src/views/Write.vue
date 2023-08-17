@@ -41,5 +41,5 @@ const updateContents = (e: any) => {
 </template>
 
 <style lang="scss">
-@import '@/assets/View/WriteView.scss';
+@import '@/assets/View/Write.scss';
 </style>

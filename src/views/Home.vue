@@ -108,5 +108,5 @@ const sortChange = (state: string) => {
 </template>
 
 <style scoped lang="scss">
-@import '@/assets/View/HomeView.scss';
+@import '@/assets/View/Home.scss';
 </style>

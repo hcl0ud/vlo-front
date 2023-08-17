@@ -45,5 +45,5 @@
 </template>
 
 <style scoped lang="scss">
-@import '@/assets/View/LoginView.scss';
+@import '@/assets/View/Login.scss';
 </style>

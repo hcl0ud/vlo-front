@@ -9,5 +9,5 @@
 </template>
 
 <style scoped lang="scss">
-@import '@/assets/Components/AlramModal.scss';
+@import '@/assets/Components/AlramBox.scss';
 </style>

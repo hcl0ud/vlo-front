@@ -3,32 +3,33 @@ import HomeView from '@/views/Home.vue'
 import LoginView from '@/views/Login.vue'
 import RegisterView from '@/views/Register.vue'
 import WriteView from '@/views/Write.vue'
+import Mypage from '@/views/Mypage.vue'
 
 const routes: any[] = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: HomeView
   },
   {
-    path: '/Login',
+    path: '/login',
     name: 'Login',
     component: LoginView
   },
   {
-    path: '/Register',
+    path: '/register',
     name: 'Register',
     component: RegisterView
   },
   {
-    path: '/Write',
+    path: '/write',
     name: 'Write',
     component: WriteView
   },
   {
-    path: '/Mypage',
+    path: '/mypage',
     name: 'Mypage',
-    component: ''
+    component: Mypage
   }
 ]
 const router = createRouter({

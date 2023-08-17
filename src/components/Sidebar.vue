@@ -41,7 +41,7 @@ watch(
           />
         </svg>
       </router-link>
-      <router-link class="clickEventGrey" to="/Write">
+      <router-link class="clickEventGrey" to="/write">
         <svg
           width="25"
           height="25"
@@ -65,7 +65,7 @@ watch(
           />
         </svg>
       </router-link>
-      <router-link class="clickEventGrey" to="/Mypage">
+      <router-link class="clickEventGrey" to="/mypage">
         <svg
           width="26"
           height="29"
@@ -109,7 +109,7 @@ watch(
         </svg>
         <alram-modal class="alram-container" v-if="showAlram" key="1" />
       </a>
-      <router-link class="clickEventGrey" to="/Login">
+      <router-link class="clickEventGrey" to="/login">
         <svg
           width="26"
           height="26"

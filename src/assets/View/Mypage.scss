@@ -1,0 +1,99 @@
+@import '../_constants.scss';
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 3rem;
+
+  .profile-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 14em;
+    height: fit-content;
+    padding: 1.5rem;
+    gap: 1rem;
+    border: 3px dotted $d3;
+    border-radius: 20px;
+
+    .profile-img {
+      margin: auto;
+      width: 10rem;
+      height: 10rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .profile-box {
+      .nickname {
+        font-size: 1.6rem;
+        font-weight: bolder;
+      }
+      .intro {
+        font-size: 1rem;
+      }
+    }
+  }
+  .post-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin: auto 2rem;
+
+    .post-box {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid $d3;
+      padding-bottom: 1rem;
+      margin-bottom: 3rem;
+
+      .post-preview-img {
+        width: 100%;
+        height: 70%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+      .post-title {
+        font-size: 1.4rem;
+        font-weight: bolder;
+        margin: 0.5rem 0;
+      }
+      .post-contents {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 1rem;
+      }
+      .post-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+        gap: 1rem;
+        height: 1rem;
+
+        .post-time,
+        .post-coments {
+          font-size: 0.8rem;
+          color: $d3;
+        }
+      }
+    }
+  }
+}

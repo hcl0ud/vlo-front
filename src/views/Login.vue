@@ -13,7 +13,7 @@
       <label>Password</label>
       <span />
     </div>
-    <router-link class="register" to="/Register">register</router-link>
+    <router-link class="register" to="/register">register</router-link>
     <router-link class="clickEventGrey submit" to="/">
       <svg
         width="17"

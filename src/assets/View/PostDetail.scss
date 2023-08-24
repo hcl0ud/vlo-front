@@ -1,0 +1,180 @@
+@import '../_constants.scss';
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+
+  .post-wrapper {
+    width: 800px;
+
+    .post-header {
+      margin-top: 3rem;
+
+      .post-title {
+        font-size: 3rem;
+        line-height: 1.5;
+        letter-spacing: -0.004em;
+        font-weight: 800;
+        color: var(--text1);
+        margin-bottom: 2rem;
+        word-break: keep-all;
+        transition: color 0.125s ease-in 0s;
+      }
+
+      .post-info {
+        -webkit-box-align: center;
+        align-items: center;
+        font-size: 1rem;
+        color: var(--text2);
+        display: flex;
+        -webkit-box-pack: justify;
+
+        .post-writer {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .post-contents {
+      margin: 5rem auto 0;
+      font-size: 1.125rem;
+      color: var(--text1);
+      transition: color 0.125s ease-in 0s;
+      line-height: 1.7;
+      letter-spacing: -0.004em;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    .post-writer-profile {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      margin-block: 16rem 1rem;
+
+      .profile-img {
+        width: 8rem;
+        height: 8rem;
+      }
+
+      .post-writer-info {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin-left: 1rem;
+
+        .post-writer-name {
+          font-size: 1.5rem;
+          line-height: 1.5;
+          font-weight: bold;
+          color: var(--text1);
+        }
+
+        .post-writer-description {
+          white-space: pre-wrap;
+          font-size: 1.125rem;
+          line-height: 1.5;
+          margin-top: 0.25rem;
+          color: var(--text2);
+          letter-spacing: -0.004em;
+        }
+      }
+    }
+
+    .post-comments-container {
+      margin-top: 3rem;
+
+      .post-comments-count {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .post-comments-write {
+        textarea {
+          resize: none;
+          padding: 1rem 1rem 1.5rem;
+          outline: none;
+          border: 1px solid #f1f3f5;
+          margin-bottom: 1.5rem;
+          width: 100%;
+          border-radius: 4px;
+          min-height: 6.125rem;
+          font-size: 1rem;
+          color: var(--text1);
+          line-height: 1.75;
+        }
+        .btn-wrapper {
+          display: flex;
+          -webkit-box-pack: end;
+          justify-content: flex-end;
+        }
+      }
+
+      .post-comments {
+        margin: 1rem 0;
+        padding: 1rem 0;
+        border-bottom: 0.5px solid $d2;
+        .comments-top {
+          display: flex;
+          justify-content: space-between;
+
+          .comments-left {
+            display: flex;
+            flex-direction: row;
+
+            .profile-img {
+              width: 4rem;
+              height: 4rem;
+            }
+            .comments-user-info {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-inline: 1rem;
+              .comments-username {
+                font-size: 1rem;
+                font-weight: bold;
+              }
+              .comments-time {
+                font-size: 0.7rem;
+                color: #868e96;
+              }
+            }
+          }
+
+          .comments-right {
+            display: flex;
+
+            .comments-option {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 1rem;
+
+              .comments-amend,
+              .comments-delete {
+                font-size: 0.9rem;
+                color: #868e96;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .comments-bottom {
+          display: flex;
+
+          .comments-contents {
+            font-size: 1.2rem;
+            margin: 1.5rem 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

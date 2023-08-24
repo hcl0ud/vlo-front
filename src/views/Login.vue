@@ -13,8 +13,8 @@
       <label>Password</label>
       <span />
     </div>
-    <router-link class="register" to="/register">register</router-link>
-    <router-link class="clickEventGrey submit" to="/">
+    <router-link class="register action" to="/register">register</router-link>
+    <router-link class="clickEventGrey action submit" to="/">
       <svg
         width="17"
         height="32"

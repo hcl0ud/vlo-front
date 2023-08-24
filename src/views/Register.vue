@@ -24,7 +24,7 @@
       <span />
     </div>
 
-    <router-link class="submit clickEventGrey" to="/Login">
+    <router-link class="submit action clickEventGrey" to="/Login">
       <svg
         width="17"
         height="32"

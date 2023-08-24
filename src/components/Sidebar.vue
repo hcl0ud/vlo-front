@@ -2,8 +2,6 @@
 import { ref, watch } from 'vue'
 import router from '@/router'
 import AlramModal from '@/components/AlramBox.vue'
-import { useRoute } from 'vue-router'
-const route: any = useRoute()
 
 const showAlram = ref(false)
 watch(
@@ -17,7 +15,7 @@ watch(
 <template>
   <div class="main-container">
     <div class="top-container">
-      <router-link class="clickEventGrey" to="/">
+      <router-link class="clickEventGrey action" to="/">
         <svg
           width="26"
           height="26"
@@ -41,7 +39,7 @@ watch(
           />
         </svg>
       </router-link>
-      <router-link class="clickEventGrey" to="/write">
+      <router-link class="clickEventGrey action" to="/write">
         <svg
           width="25"
           height="25"
@@ -65,7 +63,7 @@ watch(
           />
         </svg>
       </router-link>
-      <router-link class="clickEventGrey" to="/mypage">
+      <router-link class="clickEventGrey action" to="/mypage">
         <svg
           width="26"
           height="29"
@@ -91,7 +89,10 @@ watch(
       </router-link>
     </div>
     <div class="bot-container">
-      <a class="clickEventGrey" @click="showAlram = !showAlram">
+      <p
+        :class="showAlram ? `clickEventGrey` : `clickEventGrey action`"
+        @click="showAlram = !showAlram"
+      >
         <svg
           width="28"
           height="28"
@@ -108,8 +109,8 @@ watch(
           />
         </svg>
         <alram-modal class="alram-container" v-if="showAlram" key="1" />
-      </a>
-      <router-link class="clickEventGrey" to="/login">
+      </p>
+      <router-link class="clickEventGrey action" to="/login">
         <svg
           width="26"
           height="26"

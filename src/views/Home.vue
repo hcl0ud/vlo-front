@@ -4,6 +4,53 @@ import { ref } from 'vue'
 const sortState = ref('trend')
 
 const userData = ref({})
+const postData = ref([
+  {
+    id: 1,
+    postTitle: 'title',
+    postContents: 'contents'
+  },
+  {
+    id: 1,
+    postTitle: 'title',
+    postContents: 'contents'
+  },
+  {
+    id: 1,
+    postTitle: 'title',
+    postContents: 'contents'
+  },
+  {
+    id: 1,
+    postTitle: 'title',
+    postContents: 'contents'
+  },
+  {
+    id: 1,
+    postTitle: 'title',
+    postContents: 'contents'
+  },
+  {
+    id: 1,
+    postTitle: 'title',
+    postContents: 'contents'
+  },
+  {
+    id: 1,
+    postTitle: 'title',
+    postContents: 'contents'
+  },
+  {
+    id: 1,
+    postTitle: 'title',
+    postContents: 'contents'
+  },
+  {
+    id: 1,
+    postTitle: 'title',
+    postContents: 'contents'
+  }
+])
 const sortChange = (state: string) => {
   sortState.value = state
   /*
@@ -18,7 +65,9 @@ const sortChange = (state: string) => {
       <div class="left-container">
         <div
           @click="sortChange('trend')"
-          :class="sortState === 'trend' ? `sort select-sort` : `sort`"
+          :class="
+            sortState === 'trend' ? `sort select-sort action` : `sort action`
+          "
         >
           <svg
             width="20"
@@ -36,7 +85,9 @@ const sortChange = (state: string) => {
         </div>
         <div
           @click="sortChange('newest')"
-          :class="sortState === 'newest' ? `sort select-sort` : `sort`"
+          :class="
+            sortState === 'newest' ? `sort select-sort action` : `sort action`
+          "
         >
           <svg
             width="20"
@@ -58,7 +109,7 @@ const sortChange = (state: string) => {
         </div>
       </div>
       <div class="right-container">
-        <div class="view-change">
+        <div class="view-change action">
           <svg
             width="22"
             height="22"
@@ -75,35 +126,31 @@ const sortChange = (state: string) => {
       </div>
     </div>
     <div class="contents-container">
-      <div class="contents-box" v-for="i in 12">
-        <div class="contents-box-top"></div>
-        <div class="contents-box-middle">
-          <div class="title">제목</div>
-          <div class="preview-text">내용</div>
+      <router-link
+        class="contents-box"
+        v-for="item in postData"
+        :to="{ name: 'PostDetail', query: { id: item.id } }"
+      >
+        <div class="preview-img">
+          <img
+            src="@/assets/img/E64AD629-05F6-4E88-8A2C-5A37046CD571_1_105_c.jpeg"
+            alt=""
+          />
         </div>
-        <div class="contents-box-bottom">
-          <div class="writer">😀 by OOO</div>
-          <div class="board-info">2023.01.01</div>
+        <div class="post-info">
+          <div class="post-preview">
+            <div class="post-title">{{ item.postTitle }}</div>
+            <div class="post-contents">{{ item.postContents }}</div>
+          </div>
+          <div class="post-sub-info">
+            <div class="post-date">2023.01.01</div>
+            <div class="separator">·</div>
+            <div class="post-comments">댓글 -개</div>
+          </div>
         </div>
-      </div>
+        <div class="writer-info">😀 by OOO</div>
+      </router-link>
     </div>
-  </div>
-  <div class="clickEventGrey btn-gotop">
-    <svg
-      width="33"
-      height="18"
-      viewBox="0 0 33 18"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M1.5 16.5L16.5 1.5L31.5 16.5"
-        stroke="#777777"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
   </div>
 </template>
 

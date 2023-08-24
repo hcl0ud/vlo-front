@@ -4,6 +4,7 @@ import LoginView from '@/views/Login.vue'
 import RegisterView from '@/views/Register.vue'
 import WriteView from '@/views/Write.vue'
 import Mypage from '@/views/Mypage.vue'
+import PostDetail from '@/views/PostDetail.vue'
 
 const routes: any[] = [
   {
@@ -30,6 +31,11 @@ const routes: any[] = [
     path: '/mypage',
     name: 'Mypage',
     component: Mypage
+  },
+  {
+    path: '/post',
+    name: 'PostDetail',
+    component: PostDetail
   }
 ]
 const router = createRouter({

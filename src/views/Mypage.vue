@@ -28,7 +28,7 @@
         </div>
         <div class="post-info">
           <div class="post-time">2023.08.15</div>
-          <div class="post-coments">댓글 5개</div>
+          <div class="post-comments">댓글 5개</div>
         </div>
       </div>
     </div>
